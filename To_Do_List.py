@@ -47,7 +47,15 @@ class Task_manager:
 			else:
 				print("Task doesn't exists")
 	
-	
+	def Edit_Task(self) -> None:
+		task_num=int(input("Enter Task_num: "))
+		index=task_num-1
+		if 0<=index<len(self.tasks):
+			new_desc=input("Enter new description: ")
+			self.tasks[index].desc=new_desc
+			print("Task updated")
+		else:
+			print("Task doesn't exists")
 			
 	def Save_file(self,filename="file.txt"):
 			with open(filename,"w") as f:
@@ -92,9 +100,11 @@ def main():
 
 		print("4. Delete task")
 
-		print("5. Quit \n")
+		print("5. Edit task")
 
-		choice = input("Choose an option (1-5): ")
+		print("6. Quit \n")
+
+		choice = input("Choose an option (1-6): ")
 		
 		if choice=="1":
 			manager.Show_task()
@@ -105,6 +115,8 @@ def main():
 		elif choice=="4":
 			manager.Delete_task()
 		elif choice=="5":
+			manager.Edit_Task()
+		elif choice=="6":
 			manager.Save_file()
 			print("Good bye..")
 			
