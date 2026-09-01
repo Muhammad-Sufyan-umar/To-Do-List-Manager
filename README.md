@@ -7,7 +7,21 @@ Python-based To-Do List Manager with OOP concepts and file handling. This projec
 - Mark Completed Task.
 - Remove Completed Task.
 - Update Task.
+- Add new task
 - Beginner Friendly Code.
 
-## Output
+## Technologies Used
 
+- Python 3
+- File Handling
+- Object-Oriented-Programming(OOP)
+
+
+
+## Future Improvement
+- Add task deadlines
+- Add a GUI
+- Store Task using a Database
+
+## Author
+__Muhammad Sufyan Umar__
